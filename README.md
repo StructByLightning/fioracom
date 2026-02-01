@@ -25,9 +25,17 @@ Node.js 18+ and npm.
 
 ### Installation
 
-1. Clone the repo: `git clone https://github.com/StructByLightning/raven-schultz-portfolio.git`
-2. Navigate to the project directory: `cd raven-schultz-portfolio`
+1. Clone the repo`
+2. Navigate to the project directory: `cd fioracom`
 3. Install dependencies: `npm install`
 4. Run the development server: `npm run dev`
 
-Now, open your browser and navigate to `http://localhost:3000/`. Voila! You'll see the portfolio running.
+Now, open your browser and navigate to `http://localhost:3000/resume-html`. Voila! You'll see the portfolio running.
+
+### Available Scripts
+
+- `npm run dev` - Start the development server
+- `npm run build` - Build for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint
+- `npm run generate-resume` - Generate a PDF version of the resume page
