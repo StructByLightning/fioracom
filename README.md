@@ -1,4 +1,4 @@
-# Raven Schultz Portfolio
+# Fiora Portfolio
 
 Welcome to the repository of my personal portfolio built using Next.js. Dive in to get a glimpse of my professional journey, the projects I've undertaken, and the skills I possess.
 
