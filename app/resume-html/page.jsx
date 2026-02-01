@@ -2,10 +2,6 @@ import { notFound } from "next/navigation";
 import ExpandingHr from "@/components/ExpandingHr/ExpandingHr";
 import css from "./page.module.scss";
 
-export const metadata = {
-  title: "Raven Schultz | Portfolio",
-  description: "I'm a Full-stack Design and React Engineer. I help companies eliminate the painful back-and-forth between designers and developers by handling both roles, ensuring fast delivery and pixel-perfect implementation.",
-};
 
 export default async function FioraResume() {
   if (process.env.NODE_ENV === "production") {
@@ -16,100 +12,106 @@ export default async function FioraResume() {
     <main className={css.main}>
       <article className={css.resume} aria-label="Resume of Raven Schultz">
         <header className={css.header}>
-          <h1 className={css.name}>Raven Schultz</h1>
-          <p className={css.title}>Design Engineer · Seattle, WA</p>
+          <h1 className={css.name}>Fiora Utroske · Retail Associate</h1>
           <nav className={css.links} aria-label="Contact information">
-            <a href="mailto:msravenschultz@gmail.com">msravenschultz@gmail.com</a>
-            <a href="https://linkedin.com/in/ravenschultz">linkedin.com/in/ravenschultz</a>
-            <a href="https://github.com/StructByLightning">github.com/structbylightning</a>
-            <a href="https://ravenschultz.com">ravenschultz.com</a>
+            <a href="tel:720 413 0951">720 413 0951</a>
+            <a href="mailto:msravenschultz@gmail.com">fiorautroske@gmail.com</a>
+            <a href="mailto:msravenschultz@gmail.com">Seattle, WA</a>
           </nav>
         </header>
 
+
+
         <section className={css.jobs} aria-labelledby="experience-heading">
-
-
           <article className={css.job}>
-            <h2 id="experience-heading" className={css.atsText}>Work History</h2>
+            <h3 className={css.sectionHeading}>Experience</h3>
             <header>
-              <h3 className={css.title}>Lead Design Engineer (Remote)</h3>
+              <h3 className={css.title}>Production Associate</h3>
               <p className={css.tenure}>
-                <span className={css.company}>SymbyAI · 08/2024 — Present</span>
+                <span className={css.company}>Curios · 10/2025 — Present</span>
               </p>
             </header>
             <ul className={css.accomplishments}>
-              <li>Built frontend for platform with $800k in signed pre-launch contracts and 800+ waitlisted researchers</li>
-              <li>Full ownership of frontend (three-person team): technical direction, design standards, final call on all decisions</li>
-              <li>Transformed dense, unusable concept sketches into a production Next.js app simple enough for researchers to self-onboard</li>
-              <li>Mentored junior engineer from step-by-step direction to autonomous ownership of features, animations, and page design</li>
-              <li>Engineered custom interactive PDF renderer for displaying and annotating AI-parsed academic papers</li>
-              <li>Designed and animated homepage hero sequence demonstrating core product flow in eight seconds using SVG and GSAP</li>
+              <li>Coordinated outbound shipment of customer orders</li>
+              <li>Fabricated custom products using laser engraving and metal inlay techniques</li>
+              <li>Photographed products for ecommerce listings and edited images to improve purchase rates</li>
+              <li>Reworked pieces as needed to meet high quality standards and precise specifications</li>
             </ul>
           </article>
 
           <article className={css.job}>
             <header>
-              <h3 className={css.title}>Frontend Engineer (Remote)</h3>
+              <h3 className={css.title}>Shelf Stocker</h3>
               <p className={css.tenure}>
-                <span className={css.company}>Westland Real Estate Group · 01/2024 — 08/2024</span>
+                <span className={css.company}>Walmart · 07/2022 — 03/2023</span>
               </p>
             </header>
             <ul className={css.accomplishments}>
-              <li>Redesigned vacancy displays to stop exposing which apartments were empty; $72k/year estimated loss prevention</li>
-              <li>Trained junior developers on prompt engineering and AI-assisted workflows (Claude, ChatGPT, Continue)</li>
-              <li>Inherited nonfunctional React.js accounting app; rebuilt and migrated between incompatible backend platforms</li>
-            </ul>
-          </article>
-
-
-          <article className={css.job}>
-            <header>
-              <h3 className={css.title}>Full Stack Engineer (Remote)</h3>
-              <p className={css.tenure}>
-                <span className={css.company}>Deviate Labs · 03/2021 — 11/2023</span>
-              </p>
-            </header>
-            <ul className={css.accomplishments}>
-              <li>Created comprehensive design library with Next.js and SCSS, cutting development time for new landing pages by 40%</li>
-              <li>Designed and engineered interactive puzzle game (80k users) with seamless infinite-zoom canvas animation</li>
-              <li>Increased marketplace sessions by 40% through UX research and whole-site redesign</li>
-              <li>Built automated lead scraping and list cleaning pipeline; saved $40k/year in acquisition costs</li>
-              <li>Inherited spaghetti SaaS codebase; refactored and tested, reducing errors by 90% and improving performance</li>
-              <li>Optimized corporate site to 95th percentile Lighthouse performance</li>
+              <li>Sorted incoming merchandise and stocked shelves (grocery, frozen, dairy, deli, general merchandise) in overnight shifts</li>
+              <li>Operated pallet jacks, electric jacks, box cutters, and baler equipment</li>
+              <li>Assisted customers with product location and inquiries across multiple departments</li>
+              <li>Faced and zoned aisles to maintain presentation and merchandising standards</li>
+              <li>Recognized by management for speed and efficiency</li>
+              <li>Maintained near-perfect attendance throughout 9-month tenure</li>
             </ul>
           </article>
 
 
           <article className={css.job}>
             <header>
-              <h3 className={css.title}>Full Stack Engineer Intern</h3>
+              <h3 className={css.title}>Operations & Media</h3>
               <p className={css.tenure}>
-                <span className={css.company}>Multnomah ESD · ON Semiconductor · 03/2019 — 09/2020</span>
+                <span className={css.company}>Froggy's Lair · 07/2019 — 05/2021</span>
               </p>
             </header>
             <ul className={css.accomplishments}>
-              <li>Decreased app loading times by 90% by implementing SQL request caching</li>
-              <li>Saved $80,000 by adding a Javascript alert to unnecessary and expensive purchase orders</li>
+              <li>Packaged ~50 live animal shipments weekly using insulated containers for time-sensitive delivery</li>
+              <li>Built and assembled frog terrariums and habitats in collaboration with team</li>
+              <li>Produced product photography and ~30 promotional videos including filming, direction, and editing</li>
+              <li>Designed and implemented inventory tracking spreadsheets, monitoring stock levels and sales daily</li>
+            </ul>
+          </article>
+
+          <article className={css.job}>
+            <header>
+              <h3 className={css.title}>Event Support</h3>
+              <p className={css.tenure}>
+                <span className={css.company}>Chelsea's Place & Peakview Assisted Living · 2017 — 2021</span>
+              </p>
+            </header>
+            <ul className={css.accomplishments}>
+              <li>Provided event support including setup, food service, crafts, and cleanup</li>
+              <li>Engaged elderly residents in conversation during activities and celebrations</li>
+              <li>Built rapport with residents through Adopt a Grandparent companionship program</li>
+            </ul>
+          </article>
+
+          <article className={css.job}>
+            <header>
+              <h3 className={css.title}>Event & Tech Support</h3>
+              <p className={css.tenure}>
+                <span className={css.company}>Beyond the Blackboard · 2018 — 2020</span>
+              </p>
+            </header>
+            <ul className={css.accomplishments}>
+              <li>Operated popcorn stand at community festivals, serving customers and collecting donations</li>
+              <li>Provided on-call tech support for store printers and network issues</li>
             </ul>
           </article>
         </section>
 
-        <ExpandingHr />
 
         <footer className={css.ats}>
-          <section aria-labelledby="education-heading">
+          {/*<section aria-labelledby="education-heading">
             <h2 id="education-heading" className={css.heading}>Education</h2>
-            <p>BS. Computer Science, Portland State University</p>
-          </section>
+            <p>University of Colorado, Denver (2022 - attended)</p>
+          </section> */}
           <section aria-labelledby="skills-heading">
             <h2 id="skills-heading" className={css.heading}>Keywords</h2>
-            <p className={css.keywords}>AI-Augmented Development, AWS, Agentic AI Workflows, Agile, Animation, CSS, Canvas API, ChatGPT, Chrome DevTools Debugging, Claude Code, Continue, Cross-Browser Compatibility, Design Systems, Docker, Figma, Firebase, GCP, GSAP, Git, Git Workflows, Github, GraphQL, HTML5, Interaction Design, Javascript (ES6+), Jest, Lighthouse, Linear, LLMs, Material Design, Midjourney, Mixpanel, Mobile First Design, NPM, Next.js, Node.js, Notion, Performance Optimization, Progressive Web Apps (PWA), Prompt Engineering, Puppeteer, REST APIs, React, Responsive Design, SCSS, SEO, SQL, SSR/SSG, Typescript, User Experience (UX), User Interface (UI), Vercel, Web Accessibility/A11y, Webpack</p>
+            <p className={css.keywords}>Stocking, Merchandising, Inventory Management, Customer Service, Pallet Jack, Baler, Barcode Scanner, Order Fulfillment, Shipping, Packaging, Overnight Shift, Open Availability, Lift 50+ lbs, Reliable, Detail-Oriented, Team Player, Facing, Zoning, Freight, Receiving, Warehouse, Fast-Paced Environment, Google Sheets, Microsoft Excel</p>
           </section>
         </footer>
       </article>
-
-
-
     </main>
   </>;
 }
